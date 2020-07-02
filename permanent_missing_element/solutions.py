@@ -2,7 +2,7 @@ def solution(A):
     if len(A) == 0:
         return 1
     A.sort()
-    if A[0] != 1
+    if A[0] != 1:
         return 1
     if len(A) == 1 and A[0] == 1:
         return 2
