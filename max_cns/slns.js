@@ -24,6 +24,7 @@ function solution(N, A){
         counters[j] = lastMax;
       }
     }
+else
 
     return counters;
 
