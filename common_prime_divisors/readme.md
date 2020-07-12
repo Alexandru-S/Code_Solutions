@@ -1,1 +1,0 @@
-given 2 positive integers,  return the amount of chocolates you will eat
