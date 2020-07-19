@@ -1,3 +1,0 @@
-
-
-get distinct abs values
