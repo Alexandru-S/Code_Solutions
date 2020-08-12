@@ -5,18 +5,6 @@ for x in range(num):
     row = 0
     seat = int(input())
     opposite_seat = 0
-    if seat < 6:
-        if seat == 1:
-            print("12 WS")
-        if seat == 2:
-            print("11 MS")
-        if seat == 3:
-            print("10 AS")
-        if seat == 4:
-            print("9 AS")
-        if seat == 5:
-            print("8 MS")
-
     if seat%6 == 0:
         row = seat//6
     else:
@@ -35,7 +23,6 @@ for x in range(num):
     if row%2 != 0:
         opposite_seat = seat + (max_row_number - seat) *2 + 1
     if row%2 == 0:
-        opposite_seat = (seat - min_row_number) *2 + 1
+        opposite_seat = seat - ((seat - min_row_number) *2 + 1)
 
     print('%s %s' % (opposite_seat, position))
-        
