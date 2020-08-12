@@ -1,0 +1,13 @@
+# convert number to binary new way
+n = 1
+binary = format(n,'08b')
+print(binary)
+
+#get paliandrome new way
+
+sample_string = 'LoL'
+reversed = sample_string[::-1]
+if reversed == sample_string:
+	return True
+
+
