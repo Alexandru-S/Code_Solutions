@@ -26,9 +26,6 @@ def generatePrimes(start, stop):
     return prime_list 
 
 
-
-
-
 n = int(input())
 numbers_array = list(map(int, input().split(' ')))
 prime_list = generatePrimes(1, 1012)

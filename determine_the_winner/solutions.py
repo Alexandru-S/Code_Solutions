@@ -1,39 +1,49 @@
-
-
 T = int(input())
+
+
+
+
+flash_global = 0
+cisco_global = 0
+
+f_times = []
+c_times = []
+
 
 def calc_score(scores, decreases, student):
     tmp_score = 0
     for i, j, k in zip(scores, decreases, student):
-        tmp_score += i - j*k
+        valid_score = i - j*k if i/2 < i-j*k else i/2
+        tmp_score += valid_score
     return tmp_score
 
-flash_global = 0 
-cisco_global = 0
 
-for x in range(T):
-    scores = map(int, raw_input().split(' '))
-    decreases = map(int, raw_input().split(' '))
-    flash = map(int, raw_input().split(' '))
-    cisco = map(int, raw_input().split(' '))
-    flash_total = 0
-    cisco_total = 0
 
-    flash_total = calc_score(scores, decreases, flash)
-    cisco_total = calc_score(scores, decreases, cisco)
+for _ in range(T):
+    s = list(map(int, input().split(' ')))
+    d = list(map(int, input().split(' ')))
+    f = list(map(int, input().split(' ')))
+    c = list(map(int, input().split(' ')))
+    f_times += f
+    c_times += c
+
+    flash_total = calc_score(s, d, f)
+    cisco_total = calc_score(s, d, c)
     flash_global += flash_total
     cisco_global += cisco_total
-    if flash_global == cisco_global:
-        cisco.sort()
-        flash.sort()
-        if flash[-1] < cisco[-1]:
+
+    if flash_total == cisco_total:
+        f_times.sort()
+        c_times.sort()
+        if f[0] < c[0]:
             print('Flash')
-        elif flash[-1] > cisco[-1]:
+        elif f[0] > c[0]:
             print('Cisco')
         else:
             print('Tie')
     else:
-        if flash_global > cisco_global:
+        if flash_total > cisco_total:
             print('Flash')
         else:
             print('Cisco')
+
