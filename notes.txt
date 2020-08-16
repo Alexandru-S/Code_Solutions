@@ -3,11 +3,22 @@ n = 1
 binary = format(n,'08b')
 print(binary)
 
+# convert binary to digits
+binarry = '00001111'
+digit_rep = int(binary, 2)
+
+# get a list of all combinations in a list
+import itertools
+list = [1 ,2 3]
+combination_list = list(itertools.combinations(list, 2))
+
 #get paliandrome new way
 
 sample_string = 'LoL'
 reversed = sample_string[::-1]
 if reversed == sample_string:
 	return True
+
+
 
 
