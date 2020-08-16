@@ -1,5 +1,6 @@
 N = int(input())
 arr = list(map(int, input().split(' ')))
+arr.sort()
 
 temp_val = None
 xor_count = 0
