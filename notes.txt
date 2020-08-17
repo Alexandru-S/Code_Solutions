@@ -30,6 +30,16 @@ def factors(n):
 res = [test_str[i: j] for i in range(len(test_str))
           for j in range(i + 1, len(test_str) + 1)]
 
+def all_subsets(arr):
+    return chain(*map(lambda x: combinations(arr,x),range(len(arr) +1)))
+
+    for x in all_subsets(arr):
+        print(x)
+
+
+# Bitwise OR among List elements
+# Using reduce() + lambda + "|" operator
+res = reduce(lambda x, y: x | y, test_list)
 
 
 
