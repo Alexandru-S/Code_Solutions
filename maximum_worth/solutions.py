@@ -22,4 +22,4 @@ priced_matrix = []
 for x in range(N):
     print('highest price', )
     highest = sorted_matrix.index(max(sorted_matrix))
-    price =
+    #price =
