@@ -19,7 +19,5 @@ def flipBit(binary):
         binary >>= 1
     return maxLen + 1
 
-
-
 bit_length = str(n.bit_length())
-binary = format(n, '
+#binary = format(n, '
