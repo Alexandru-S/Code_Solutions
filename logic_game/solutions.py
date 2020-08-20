@@ -11,4 +11,4 @@ for _ in range(int(input())):
     if val!=0:
         print(val)
     else:
-        print(pow(2,num))     
+        print(pow(2,num))

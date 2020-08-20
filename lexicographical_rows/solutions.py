@@ -1,5 +1,5 @@
 import itertools
-from itertools import permutations, combinations_with_replacement
+from itertools import combinations_with_replacement
 def Solve (k):
     # Write your code here
     return k

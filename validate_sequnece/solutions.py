@@ -10,4 +10,3 @@ def isValidSubsequence(array, sequence):
 		if list(x) == sequence:
 			found = True
 	return found
-
