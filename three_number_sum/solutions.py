@@ -36,4 +36,3 @@ def threeNumberSum(array, targetSum):
 	while fixed_array == False:
 		fixed_array = setLowToHigh(target_result)
     return target_result
-
