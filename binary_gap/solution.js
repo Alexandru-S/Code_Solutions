@@ -1,18 +1,18 @@
 function solution(N) {
-    var binary_arr = Array.from(N.toString(2), Number);
-    var start_pos = 0;
+    var binaryArr = Array.from(N.toString(2), Number);
+    var startPos = 0;
     var count = 0;
     var tracking = [];
 
-    for(var i = 0 ; i < binary_arr.length; i++){
-        if(binary_arr[i] === 1 && start_pos === 1){
+    for(var i = 0 ; i < binaryArr.length; i++){
+        if(binaryArr[i] === 1 && startPos === 1){
             tracking.push(count);
             count = 0;
         }
-        else if(binary_arr[i] === 1 && start_pos === 0){
-            start_pos = 1;
+        else if(binaryArr[i] === 1 && startPos === 0){
+            startPos = 1;
         }
-        else if( binary_arr[i] ===  0 && start_pos === 1){
+        else if( binaryArr[i] ===  0 && startPos === 1){
             count++;
         }
     }
