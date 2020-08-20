@@ -37,4 +37,4 @@ function solution(A, B) {
     return count;
 }
 
-console.log("solution", solution([15,10,3],[75,30,5]))
+console.log("solution", solution([15,10,3],[75,30,5]));

@@ -16,7 +16,7 @@ function solution(N) {
             count++;
         }
     }
-    tracking.sort()
+    tracking.sort();
     if(tracking.length){
         return tracking[tracking.length -1];
     }else{

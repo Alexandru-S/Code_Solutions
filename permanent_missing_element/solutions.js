@@ -2,7 +2,7 @@ function solution(A) {
     if(!A.length){
         return 1;
     }
-    A.sort(function(a,b){return a-b})
+    A.sort(function(a,b){return a-b});
     if(A[0] !== 1){
         return 1;
     }
