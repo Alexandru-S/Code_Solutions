@@ -2,7 +2,6 @@ def solve (query, s, t):
     result = []
     for x in query:
         start_index = x[0]-1
-        end_index = x[1]+1
         to_remove = s[start_index:x[1]]
         new_result = s.replace(to_remove, '')
         if t in new_result:
