@@ -1,8 +1,4 @@
 import itertools
-from itertools import combinations_with_replacement
-def Solve (k):
-    # Write your code here
-    return k
 
 T = int(input())
 for _ in range(T):
@@ -11,8 +7,6 @@ for _ in range(T):
     print (out_)
 
 albhabet = 'abcd'
-combinationlist = list(itertools.permutations(albhabet, 4))
-
 
 new_list = [p for p in itertools.product(albhabet, repeat=4)]
 properlist = []
