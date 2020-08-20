@@ -1,5 +1,4 @@
 def smallestDifference(arrayOne, arrayTwo):
-	tracking_array = []
 	arrayOne.sort()
 	arrayTwo.sort()
 	idx = 0
@@ -7,7 +6,6 @@ def smallestDifference(arrayOne, arrayTwo):
 	smallest = float('inf')
 	current = float('inf')
 	smallest_pair = []
-	
 	while idx < len(arrayOne) and idy < len(arrayTwo):
 		firstNum = arrayOne[idx]
 		secondNum = arrayTwo[idy]
@@ -22,6 +20,6 @@ def smallestDifference(arrayOne, arrayTwo):
 	
 		if smallest > current:
 			smallest = current
-			smallestPair = [firstNum, secondNum]
+			smallest_pair = [firstNum, secondNum]
 			
-	return smallestPair
+	return smallest_pair
