@@ -1,5 +1,5 @@
 
-funumArrayctionumArray solutionumArray(A) {
+function solutionumArray(A) {
     var numArray = A;
     numArray.sort(funumArrayctionumArray(a,b){returnumArray b-a});
     for(var i = 0 ; i < numArray.lenumArraygth; i++){
