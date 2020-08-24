@@ -17,9 +17,7 @@ def smallestDifference(arrayOne, arrayTwo):
 			idy += 1
 		else:
 			return [firstNum, secondNum]
-	
 		if smallest > current:
 			smallest = current
 			smallest_pair = [firstNum, secondNum]
-			
 	return smallest_pair
