@@ -6,19 +6,17 @@ def getCombinations(arr, n):
 
 
 def setLowToHigh(target_result):
-	max = len(target_result) -1
+	max_var = len(target_result) -1
 	count = 0
-	for x in range(len(target_result)):	
-		if x != max:
+	for x in range(len(target_result)):
+		if x != max_var:
 			if target_result[x][0] == target_result[x+1][0]:
 				if target_result[x][1] > target_result[x+1][1]:
 					target_result[x], target_result[x+1] = target_result[x+1], target_result[x]
-					count +=1
-					
+					count += 1
 			if target_result[x][0] > target_result[x+1][0]:
 				target_result[x], target_result[x+1] = target_result[x+1], target_result[x]
 				count += 1
-
 	if count == 0:
 		return True
 	else:
