@@ -20,10 +20,9 @@ def generatePrimes(start, stop):
                     break;
                 else:
                     prime_list.append(x)
-
     prime_list = list(set(prime_list))
     prime_list.insert(0, 2)
-    return prime_list 
+    return prime_list
 
 
 n = int(input())
