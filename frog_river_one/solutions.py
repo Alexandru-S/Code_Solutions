@@ -1,10 +1,7 @@
-A = [1, 3, 1, 4, 2, 3, 5, 4]
-X = 5
-
 def solution(X, A):
-    if len(A) == 0:
+    tupple = list(enumerate(A))
+    result = list(filter(lambda x: x[1] == X, tupple))
+    if result:
+        return result[0][0]
+    else:
         return -1
-    numbers_object = {i:A[i] for i in range(len(A))}
-    result = list(numbers_object.keys())[list(numbers_object.values()).index(X)]
-    return result
-solution(X,A)
