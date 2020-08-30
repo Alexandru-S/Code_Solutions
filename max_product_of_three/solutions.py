@@ -1,3 +1,5 @@
+# 100% time complexity O(n)
 def solution(A):
     A.sort()
-    return A[-3] * A[-2] * A[-1]
+    n = len(A)
+    return max(A[0] * A[1] * A[n - 1],  A[n - 1] * A[n - 2] * A[n - 3])
