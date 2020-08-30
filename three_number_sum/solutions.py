@@ -8,7 +8,7 @@ def getCombinations(arr, n):
 def setLowToHigh(target_result):
 	max_var = len(target_result) -1
 	count = 0
-	for x in range(len(target_result)):
+	for x, value in enumerate(target_result):
 		if x != max_var:
 			if target_result[x][0] == target_result[x+1][0]:
 				if target_result[x][1] > target_result[x+1][1]:
