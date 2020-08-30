@@ -10,12 +10,12 @@ def setLowToHigh(target_result):
 	count = 0
 	for x, value in enumerate(target_result):
 		if x != max_var:
-			if target_result[x][0] == target_result[x+1][0]:
-				if target_result[x][1] > target_result[x+1][1]:
-					target_result[x], target_result[x+1] = target_result[x+1], target_result[x]
+			if value[0] == target_result[x+1][0]:
+				if value[1] > target_result[x+1][1]:
+					value, target_result[x+1] = target_result[x+1], value
 					count += 1
-			if target_result[x][0] > target_result[x+1][0]:
-				target_result[x], target_result[x+1] = target_result[x+1], target_result[x]
+			if value[0] > target_result[x+1][0]:
+				value, target_result[x+1] = target_result[x+1], value
 				count += 1
 	if count == 0:
 		return True
