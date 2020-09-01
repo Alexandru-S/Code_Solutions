@@ -8,7 +8,6 @@ def solution(S):
         opening_brackets = ['(', '{', '[']
         closing_brackets = [')', '}', ']']
         bracket_count = [0, 0, 0]
-        last_closed_bracket = None
         last_opened_bracket = None
         for x in S:
             for y in range(len(bracket_count)):
