@@ -6,7 +6,7 @@ def solution(A, B):
     surviving_fish = []
     current_fish = None
     for index, value in enumerate(A):
-        if index == 0:
+        if B[index] == 0:
             if index == 0:
                 current_fish = A[index]
                 surviving_fish.append(A[index])
