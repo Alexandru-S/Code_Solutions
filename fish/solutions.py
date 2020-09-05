@@ -1,3 +1,4 @@
+# TODO  test new solutoon
 def solution(A, B):
     if len(A) == 0:
         return 0
