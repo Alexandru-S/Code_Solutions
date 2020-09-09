@@ -1,21 +1,17 @@
 # 100% time complexity O(n)
-def solution(A, B):
-    if len(A) == 0:
-        return 0
-    if len(A) == 1:
-        return 1
-    survivals = 0
-    stack = []
-    for i ,value in enumerate(A):
-        if B[i] == 0:
-            while len(stack) != 0:
-                if stack[-1] > value:
-                    break
-                else:
-                    stack.pop()
-            else:
-                survivals +=1
+def solution(H):
+    N = len(H)
+    stones = 0
+    stack = [0] * N
+    stack_num = 0
+
+    for i in range(N):
+        while stack_num > 0 and stack[stack_num - 1] > H[i]:
+            stack_num -= 1
+        if stack_num > 0 and stack[stack_num - 1] == H[i]:
+            pass
         else:
-            stack.append(value)
-    survivals += len(stack)
-    return survivals
+            stones += 1
+            stack[stack_num] = H[i]
+            stack_num += 1
+    return stones
