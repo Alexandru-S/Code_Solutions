@@ -6,16 +6,16 @@ def solution(A, B):
         return 1
     survivals = 0
     stack = []
-    for i in range(len(A)):
+    for i ,value in enumerate(A):
         if B[i] == 0:
-            while len(stack) !=0:
-                if stack[-1] > A[i]:
+            while len(stack) != 0:
+                if stack[-1] > value:
                     break
                 else:
                     stack.pop()
             else:
                 survivals +=1
         else:
-            stack.append(A[i])
+            stack.append(value)
     survivals += len(stack)
     return survivals
