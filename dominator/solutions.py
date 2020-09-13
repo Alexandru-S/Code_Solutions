@@ -1,4 +1,9 @@
+# 100% time complexity O(n)
 def solution(A):
+    if len(A) == 0:
+        return -1
+    if len(A) == 1:
+        return 0
     tracking_dict = {}
     N = len(A)
     for x in A:
