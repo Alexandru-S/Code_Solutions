@@ -5,4 +5,6 @@
 Repository contains solutions for personal betterment 
 and community knowledge.
 
-Solutions written in Javascript and Python.
+## Languages used  
+  **Python 3.8**
+  **Javascript**
