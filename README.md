@@ -6,5 +6,5 @@ Repository contains solutions for personal betterment
 and community knowledge.
 
 ## Languages used  
-  **Python 3.8**
+  **Python 3.8**  
   **Javascript**
