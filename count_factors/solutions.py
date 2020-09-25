@@ -9,4 +9,3 @@ def solution(N):
             else:
                 tracking_list.append(x)
     return len(tracking_list)
-
