@@ -1,8 +1,12 @@
-# 57% soluton time complexity O(n)
+# 100% soluton time complexity O(n)
 def solution(N):
-    factor_list = []
-    for x in range(1, N + 1):
+    tracking_list = []
+    for x in range(1,int(N**0.5 + 1)):
         if N % x == 0:
-            factor_list.append(x)
-    result = len(factor_list) if len(factor_list) > 0 else 0
-    return result
+            if x != N/x:
+                tracking_list.append(x)
+                tracking_list.append(N/x)
+            else:
+                tracking_list.append(x)
+    return len(tracking_list)
+
