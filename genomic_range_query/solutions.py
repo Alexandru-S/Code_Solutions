@@ -1,14 +1,13 @@
-# 62% time complexity O(n*m)
+# 100% time complexity O(n+m)
 def solution(S, P, Q):
     tracker = []
-    for p, q in zip(P, Q):
-        coord_string = list(set(S[p:q + 1]))
-        if 'A' in coord_string:
+    for i in range(len(P)):
+        if 'A' in S[P[i]:Q[i]+1]:
             tracker.append(1)
-        elif 'C' in coord_string:
+        elif 'C' in S[P[i]:Q[i]+1]:
             tracker.append(2)
-        elif 'G' in coord_string:
+        elif 'G' in S[P[i]:Q[i]+1]:
             tracker.append(3)
-        elif 'T' in coord_string:
+        else:
             tracker.append(4)
     return tracker
