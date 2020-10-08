@@ -1,6 +1,5 @@
 # 12% time complexity O(n)
 def solution(N, M):
-    arr_list = list(range(N))
     counter = True
     tracking_list = []
     list_index = 0
