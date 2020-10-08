@@ -1,6 +1,5 @@
 # 100% time complexity O(n)
 def solution(A):
-    disks = []
     left_limits = []
     right_limits = []
     for x in range(len(A)):
