@@ -19,12 +19,10 @@ def solution(A):
         return 0
 
     cnt = 0
-    last_idx = 0
 
     for idx, value in enumerate(A):
         if value == candidate_ele:
             cnt += 1
-            last_idx = idx
 
     if cnt < len(A) // 2:
         return 0
