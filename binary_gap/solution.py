@@ -1,3 +1,4 @@
+# 100% time complexity O(n)
 def solution(N):
     start = 0
     count = 0
