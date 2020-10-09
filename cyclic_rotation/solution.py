@@ -1,3 +1,4 @@
+# 100% time complexity O(n)
 def solution(A, K):
     if len(A) == 0:
         return []

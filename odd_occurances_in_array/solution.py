@@ -1,3 +1,4 @@
+# 100% time complexity O(n)
 def solution(A):
     A.sort()
     for i in reversed(range(len(A))):
