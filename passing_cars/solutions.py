@@ -4,7 +4,7 @@ def solution(A):
     multiple = 0
     for x in A:
         if x == 0:
-            count+=1
+            count += 1
         else:
             multiple += count
     if multiple > 1000000000:

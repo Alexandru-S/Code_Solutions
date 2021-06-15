@@ -1,6 +1,6 @@
 # 77% correct time complexity O(n)
 def solution(A):
-    highest = sorted(A, reverse = True)[0]
+    highest = sorted(A, reverse=True)[0]
     lowest = sorted(A)[0]
     local_highest = None
     local_lowest = None
@@ -13,7 +13,7 @@ def solution(A):
                 local_lowest = A[x]
             if A[x] > local_lowest:
                 local_highest = x
-                profit = A[x]-local_lowest
+                profit = A[x] - local_lowest
                 profit_tracker.append(profit)
-    result = sorted(profit_tracker, reverse= True)[0]
+    result = sorted(profit_tracker, reverse=True)[0]
     return result

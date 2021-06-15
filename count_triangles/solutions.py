@@ -7,8 +7,8 @@ def solution(A):
         r = x - 1
         while l < r:
             if A[l] + A[r] > A[x]:
-                count += r-l
+                count += r - l
                 r -= 1
             else:
-                l +=1;
+                l += 1
     return count

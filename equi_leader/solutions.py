@@ -1,17 +1,17 @@
 # 100% time complexity O(n)
 def solution(A):
-    candidate_ele = ''
+    candidate_ele = ""
     candidate_cnt = 0
 
     for value in A:
-        if candidate_ele == '':
+        if candidate_ele == "":
             candidate_ele = value
             candidate_cnt = 1
         else:
             if value != candidate_ele:
                 candidate_cnt -= 1
                 if candidate_cnt == 0:
-                    candidate_ele = ''
+                    candidate_ele = ""
             else:
                 candidate_cnt += 1
 
@@ -32,8 +32,10 @@ def solution(A):
     for idx, value in enumerate(A):
         if value == candidate_ele:
             cnt_to_the_left += 1
-        if cnt_to_the_left > (idx + 1) // 2 and \
-                cnt - cnt_to_the_left > (len(A) - idx - 1) // 2:
+        if (
+            cnt_to_the_left > (idx + 1) // 2
+            and cnt - cnt_to_the_left > (len(A) - idx - 1) // 2
+        ):
             equi_cnt += 1
 
     return equi_cnt

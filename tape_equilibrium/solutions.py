@@ -1,8 +1,9 @@
-A = [3,1,2,4,3]
+A = [3, 1, 2, 4, 3]
+
 
 def solution(A):
     s = sum(A)
-    m = float('inf')
+    m = float("inf")
     left_sum = 0
     for x in A[:-1]:
         left_sum += x

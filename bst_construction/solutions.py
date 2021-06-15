@@ -64,9 +64,17 @@ class BST:
                     else:
                         currentNode.value = None
                 elif parentNode.left == currentNode:
-                    parentNode.left = currentNode.left if currentNode.left is not None else currentNode.right
+                    parentNode.left = (
+                        currentNode.left
+                        if currentNode.left is not None
+                        else currentNode.right
+                    )
                 elif parentNode.right == currentNode:
-                    parentNode.right = currentNode.left if currentNode.left is not None else currentNode.right
+                    parentNode.right = (
+                        currentNode.left
+                        if currentNode.left is not None
+                        else currentNode.right
+                    )
                 break
         return self
 

@@ -1,7 +1,7 @@
 # 100% time complexity O(n)
 def solution(M, A):
-    accessed = [-1] * (M + 1)   # -1: not accessed before
-                                # Non-negative: the previous occurrence position
+    accessed = [-1] * (M + 1)  # -1: not accessed before
+    # Non-negative: the previous occurrence position
     front, back = 0, 0
     result = 0
     for front in range(len(A)):
@@ -14,7 +14,8 @@ def solution(M, A):
             # position.
             newBack = accessed[A[front]] + 1
             result += (newBack - back) * (front - back + front - newBack + 1) / 2
-            if result >= 1000000000:   return 1000000000
+            if result >= 1000000000:
+                return 1000000000
             # Restore and set the accessed array
             for index in range(back, newBack):
                 accessed[A[index]] = -1

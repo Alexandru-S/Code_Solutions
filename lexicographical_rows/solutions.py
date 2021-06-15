@@ -4,8 +4,8 @@ T = int(input())
 for _ in range(T):
     k = int(input())
     out_ = Solve(k)
-    print (out_)
-albhabet = 'abcd'
+    print(out_)
+albhabet = "abcd"
 
 
 def Solve():

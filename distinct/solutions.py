@@ -1,3 +1,3 @@
-#100% time complexity O(n)
+# 100% time complexity O(n)
 def solution(A):
     return len(list(set(A)))

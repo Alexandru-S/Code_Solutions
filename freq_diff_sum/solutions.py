@@ -3,7 +3,12 @@ import collections
 
 mainstring = str(input())
 
-all_substrings = [ mainstring[i:j] for i in range(len(mainstring)) for j in range(i + 1, len(mainstring) + 1) if len(mainstring[i:j]) > 2]
+all_substrings = [
+    mainstring[i:j]
+    for i in range(len(mainstring))
+    for j in range(i + 1, len(mainstring) + 1)
+    if len(mainstring[i:j]) > 2
+]
 
 main_diff = []
 

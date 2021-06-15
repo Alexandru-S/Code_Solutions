@@ -2,22 +2,22 @@ import math
 
 
 def primeTnumber(xi):
-    if xi > 0 and xi <4:
-        return 'NO'
+    if xi > 0 and xi < 4:
+        return "NO"
     sqrt = math.sqrt(xi)
     if sqrt in prime_list:
-        return 'YES'
+        return "YES"
     else:
-        return 'NO'
+        return "NO"
 
 
 def generatePrimes(start, stop):
     prime_list = []
-    for x in range(start, stop +1):
+    for x in range(start, stop + 1):
         if x > 1:
             for i in range(2, x):
-                if x%i == 0:
-                    break;
+                if x % i == 0:
+                    break
                 else:
                     prime_list.append(x)
     prime_list = list(set(prime_list))
@@ -26,7 +26,7 @@ def generatePrimes(start, stop):
 
 
 n = int(input())
-numbers_array = list(map(int, input().split(' ')))
+numbers_array = list(map(int, input().split(" ")))
 prime_list = generatePrimes(1, 1012)
 
 for x in range(n):

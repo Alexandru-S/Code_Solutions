@@ -1,5 +1,5 @@
 N = int(input())
-arr = list(map(int, input().split(' ')))
+arr = list(map(int, input().split(" ")))
 arr.sort()
 
 temp_val = None
@@ -10,6 +10,6 @@ for i in range(N):
     else:
         result = temp_val ^ arr[i]
         if result == 0:
-            xor_count +=1
+            xor_count += 1
         temp_val = result
 print(xor_count)

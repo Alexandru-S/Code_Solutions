@@ -1,4 +1,4 @@
-#100% time comlpexity O(n+m)
+# 100% time comlpexity O(n+m)
 def solution(N, A):
     counter_list = [0] * N
     max_1 = 0

@@ -6,8 +6,8 @@ def solution(A):
             break
         if i == len(A):
             continue
-        if A[i] == A[i-1]:
+        if A[i] == A[i - 1]:
             A.pop(i)
-            A.pop(i-1)
-            i = i -2
+            A.pop(i - 1)
+            i = i - 2
     return A[0]
