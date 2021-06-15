@@ -1,5 +1,5 @@
 # 100% O(n^2) time complexity
-def twoNumberSum(array, targetSum):
+def twoNumberSum1(array, targetSum):
     tracking_array = []
     for i in array:
         for j in array:
@@ -13,11 +13,10 @@ def twoNumberSum(array, targetSum):
 
 
 # 100% O(n) time complexity
-def twoNumberSum(array, targetSum):
+def twoNumberSum2(array, targetSum):
     if len(array) == 0 or len(array) == 1:
         return []
     dictionary = {}
-    answer = []
     for i in range(len(array)):
         second_number = targetSum - array[i]
         if second_number in dictionary.keys():
