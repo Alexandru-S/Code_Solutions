@@ -1,17 +1,17 @@
-function solution(N, A){
+function solution(N, A) {
 
     var lastMax = 0;
     var max = 0;
-    var counters =  new Array (N).fill(0)
+    var counters = new Array(N).fill(0)
 
-    for(var j=0; j < A.length; j++){
-        if(A[j] < (N + 1)){
+    for (var j = 0; j < A.length; j++) {
+        if (A[j] < (N + 1)) {
             var i = A[j] - 1;
-            if (counters[i] < lastMax){
+            if (counters[i] < lastMax) {
                 counters[i] = lastMax;
             }
             counters[i]++;
-            if (max < counters[i]){
+            if (max < counters[i]) {
                 max = counters[i];
             }
         } else {
@@ -19,13 +19,11 @@ function solution(N, A){
         }
     }
 
-    for(var j = 0; j < N; j++){
-      if (counters[j] < lastMax){
-        counters[j] = lastMax;
-      }
+    for (var j = 0; j < N; j++) {
+        if (counters[j] < lastMax) {
+            counters[j] = lastMax;
+        } else {
+            return counters;
+        }
     }
-else
-
-    return counters;
-
 }
