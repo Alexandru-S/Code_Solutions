@@ -46,6 +46,7 @@ def all_subsets(arr):
         print(x)
 
 
+test_list = ["a", "b", "c"]
 # Bitwise OR among List elements
 # Using reduce() + lambda + "|" operator
 res = reduce(lambda x, y: x | y, test_list)
