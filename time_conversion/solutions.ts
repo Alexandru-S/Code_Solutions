@@ -2,15 +2,17 @@ function timeConversion(s: string): string {
 
     const timeSuffix = s.slice(-2)
     const hourTime = s.slice(0,2)
-    console.log(s)
-    console.log(hourTime)
     let newTime;
     if(timeSuffix === 'AM'){
-        return s.slice(0,8)
+        if(hourTime === '12'){
+            newTime = '00'
+        }else{
+           return s.slice(0,8)
+        } 
     }else{
         
         if(hourTime === '12'){
-            newTime = '00'
+            newTime = '12'
         }else{
             newTime = (parseInt(hourTime)+12).toString()
         }  
