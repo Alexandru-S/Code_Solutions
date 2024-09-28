@@ -7,7 +7,7 @@ function marsExploration(s: string): number {
         if(count === 0 && s.charAt(i) !== 'S'){
                 countDifferences++;
         }else if(count === 1 && s.charAt(i) !== 'O'){
-                countDifferences++;   
+                countDifferences++;
         }else if(count === 2 && s.charAt(i) !== 'S'){
                 countDifferences++;
         }
