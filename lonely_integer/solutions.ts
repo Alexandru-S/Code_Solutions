@@ -13,11 +13,11 @@ function lonelyinteger(a: number[]): number {
         n--;
         
     }while(swapped)
-    console.log("swapped ? ", a)
 
         for(let i = a.length - 1 ; i>0; i--){
             if(a[i] === a[i-1]){
                 a.splice(i-1,2)
+                i--;
             }
         }
     return a[0]
