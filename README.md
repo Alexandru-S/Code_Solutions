@@ -8,3 +8,4 @@ and community knowledge.
 ## Languages used  
   **Python 3.8**  
   **Javascript**
+  **Typescript**
