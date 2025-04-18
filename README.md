@@ -5,7 +5,10 @@
 Contains solutions for personal upskilling.
 
 ## Languages used  
-  **Python 3.8**  
+  **Python 3.8**
+
   **Javascript**
+
   **Typescript**
+  
   **C#** 
