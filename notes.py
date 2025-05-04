@@ -22,8 +22,6 @@ def new_pal():
 
 
 # get factors of a number
-
-
 def factors(n):
     return set(
         reduce(
