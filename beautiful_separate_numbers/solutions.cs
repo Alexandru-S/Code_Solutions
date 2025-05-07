@@ -1,22 +1,24 @@
-    public static void separateNumbers(string s){
+public static void separateNumbers(string s){
+        int n = s.Length;
         if(s.Length == 1 || s[0] == '0'){
             Console.WriteLine("NO");
+            return;
         }else{
-            for(int i = 0 ; i< s.Length/2; i++){
-                int sampleInt = int.Parse(s.Substring(0,i+1).ToString());
+            for(int i = 1 ; i<= n/2; i++){
+                long sampleInt = long.Parse(s.Substring(0,i).ToString());
                 string sampleSequence = sampleInt.ToString();
                 var sb = new StringBuilder();
-                int arrayLength = sampleInt+(s.Length/(i+1));
-                for(int j = sampleInt; j<sampleInt+(s.Length/(i+1)); j++){
+                long arrayLength = sampleInt+(n/(i));
+                for(long j = sampleInt; j<sampleInt+(n/i); j++){
                     sb.Append(j);
-                    if(sb.ToString().Length == s.Length){
+                    if(sb.ToString().Length == n){
                         break;
                     }
                 } 
                 if(sb.ToString() ==s){
                     Console.WriteLine("YES "+ sampleInt);
                     break;
-                }else if(sb.ToString() != s && i == (s.Length/2)-1){
+                }else if(sb.ToString() != s && i == (n/2)){
                     Console.WriteLine("NO");
                     break;
                 }
