@@ -5,21 +5,17 @@
             arr[i] = new int[0];
         }
         int lastAnswer = 0;
-        Console.WriteLine("wgwrgwrgw"+queries.Count);
         for(int i =0; i<queries.Count; i++){
-            Console.WriteLine("-*9-*-*-*-*-*-*-*-*-**1-"+queries[i][0]);
-            Console.WriteLine("-*9-*-*-*-*-*-*-*-*-**2-"+queries[i][1]);
-            Console.WriteLine("-*9-*-*-*-*-*-*-*-*-**3-"+queries[i][2]);
-            int idx = (queries[0][2]^lastAnswer) %n;
-            if(queries[i][0] == 1){    
-                lastAnswer = idx;
-                arr[idx].Append(queries[i][2]);
+            int idx = (queries[i][1] ^ lastAnswer) % n;
+            if(queries[i][0] == 1){   
+                   int val = queries[i][2];
+                    Array.Resize(ref arr[idx], arr[idx].Length + 1);
+                    arr[idx][ arr[idx].Length - 1 ] = val;
             }
-            if(queries[i][0]== 2){
-                lastAnswer = arr[idx][queries[i][2]%arr[idx].Length];
+            if(queries[i][0]== 2){      
+                lastAnswer = arr[idx].Length > 0 ? arr[idx][ queries[i][2] % arr[idx].Length ]: 0;
                 result.Add(lastAnswer);
             }
         }
-        Console.Write("*-*--**-*-*"+result.Count);
         return result;
     }
