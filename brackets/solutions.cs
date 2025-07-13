@@ -23,6 +23,6 @@
             }
             
         }
-        return "YES";
+        return compare.Count == 0 ?"YES":"NO";
 
     }
