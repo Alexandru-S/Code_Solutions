@@ -27,5 +27,4 @@ static SinglyLinkedListNode mergeLists(SinglyLinkedListNode head1, SinglyLinkedL
         node.next = head1;
     }
     return dummy.next;
-
 }
