@@ -1,4 +1,4 @@
-    public static long stockmax(List<int> prices)
-    {
+public static long stockmax(List<int> prices)
+{
 
-    }
+}

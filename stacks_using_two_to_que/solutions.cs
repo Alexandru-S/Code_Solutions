@@ -2,28 +2,21 @@ using System;
 using System.Collections.Generic;
 
 class Solution
-{    static void Main(String[] args)
-    {
+{    static void Main(String[] args){
         int q = Convert.ToInt32(Console.ReadLine());
         Queue queue = new Queue();
 
-        for (int i = 0; i < q; i++)
-        {
+        for (int i = 0; i < q; i++){
             string[] input = Console.ReadLine().Split(' ');
-
             int type = Convert.ToInt32(input[0]);
-
-            if (type == 1)
-            {
+            if (type == 1){
                 int value = Convert.ToInt32(input[1]);
                 queue.Enqueue(value);
             }
-            else if (type == 2)
-            {
+            else if (type == 2){
                 queue.Dequeue();
             }
-            else if (type == 3)
-            {
+            else if (type == 3){
                 Console.WriteLine(queue.Peek());
             }
         }
