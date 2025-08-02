@@ -19,11 +19,17 @@ A collection of coding solutions across multiple languages, built for personal g
 Each problem has its own folder, named after the problem, and contains the corresponding solution file. For example:
 
 Code_Solutions/
+
 ├── problem-name/
+
 │ ├── solution.py
+
 │ └── README.md (optional)
+
 ├── another-problem/
+
 │ └── solution.cs
+
 └── README.md
 
 
