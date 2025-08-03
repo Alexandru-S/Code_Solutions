@@ -7,7 +7,7 @@
 ![Top Language](https://img.shields.io/github/languages/top/Alexandru-S/Code_Solutions)
 
 
-A collection of coding solutions across multiple languages, built for personal growth, practice, and mastering problem-solving techniques.
+A collection of coding solutions in multiple languages — for practice, problem-solving mastery, and personal development.
 
 ## Languages & Tools
 - **Python 3.8**
@@ -16,7 +16,10 @@ A collection of coding solutions across multiple languages, built for personal g
 - **C#**
 
 ## Project Structure
-Each problem has its own folder, named after the problem, and contains the corresponding solution file. For example:
+
+Each problem resides in its own folder and contains:
+- A solution file (named appropriately for the language).
+- An optional `README.md` with explanation or notes.
 
 Code_Solutions/
 
@@ -34,6 +37,6 @@ Code_Solutions/
 
 
 ## Goals
-- Practice and refine algorithmic thinking.
+- Sharpen algorithmic thinking.
 - Explore language-specific idioms and libraries.
 - Prepare for coding interviews and real-world problem solving.
