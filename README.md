@@ -21,19 +21,15 @@ Each problem resides in its own folder and contains:
 - A solution file (named appropriately for the language).
 - An optional `README.md` with explanation or notes.
 
+```text
 Code_Solutions/
-
 ├── problem-name/
-
-│ ├── solution.py
-
-│ └── README.md (optional)
-
+│   ├── solution.py
+│   └── README.md (optional)
 ├── another-problem/
-
-│ └── solution.cs
-
+│   └── solution.cs
 └── README.md
+```
 
 
 ## Goals
